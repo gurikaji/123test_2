@@ -10,7 +10,7 @@ def load_vocabulary():
     rows = []
     file_path = "JLPT N4 語彙.csv"
     if os.path.exists(file_path):
-        with open(file_path, mode="r", encoding="utf-8-sig") as f:
+        with open(file_path, mode="r", encoding="cp932") as f:
             reader = csv.reader(f)
             for row in reader:
                 if row:
